@@ -8,7 +8,7 @@ if (localStorage.getItem("posts")) {
 tweetButton.addEventListener("click", () => {
     const tweetText = tweetInput.value.trim();
     if (tweetText === "") {
-        alert("Tweet cannot be empty!");
+        alert("Birşey Yazmadın!");
         return;
     }
     const newId = postList.length ? postList[postList.length - 1].id + 1 : 1;
